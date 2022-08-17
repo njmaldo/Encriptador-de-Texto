@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Font Awesome styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">    
+    <!-- Google Fonts -->
+    
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/Logo.png" class="logo-header" alt="Logo de la página" >
+            <div class="top-contact"
+                <p > Info: <span>+54-2901-487488  <a  href="mailto:nestorjmaldo@gmail.com">nestorjmaldo@gmail.com</a></p>  
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container-principal">
+            <div class="card-1">
+                <textarea name="txt2" 
+                          class="mensaje" 
+                          id="mensaje" 
+                          cols="0" 
+                          rows="0" 
+                          placeholder="Ingresa el texto aquí" ></textarea>   
+                </div>
+                <div class="exclamacion">
+                    <a class="signo">
+                        <i class="fa-solid fa-circle-exclamation" 
+                           id="texto">Solo letras minusculas y sin acento.</i>
+                    </a>
+                </div>
+                <div class="buttons">
+                    <button class="btn-encriptar" 
+                            id="encriptar">Encriptar
+                    </button>       
+                    <button class="btn-desencriptar" 
+                            id="desencriptar">Desencriptar
+                    </button>       
+                </div>
+            
+            <div class="card-2">
+                    <textarea name="txt2" 
+                              class="txt-resultado" 
+                              id="resultado" 
+                              cols="0" 
+                              rows="0"></textarea> 
+                    <button type="button" 
+                            class="copiar" 
+                            id="copiar">Copiar
+                    </button>
+            </div>
+            <img src="images/muñeco.png" 
+                 class="img-resultado" 
+                 id="img-resultado" 
+                 alt="img texto encriptado">
+            <img src="images/sufijo-muñeco.png" 
+                 class="sufijo-resultado" 
+                 id="sufijo-resultado" 
+                 alt="sufijo del texto encriptado">
+        </div>
+    </main>
+    <footer>
+        <img src="images/Logo.png" class="logo-footer" alt="Logo de la página">
+        <p class="copyright">copyright &copy Encriptador - 2022 Todos los derechos reservados. 
+            Made with <i class="fa-solid fa-heart"></i> by: <a  href="mailto:nestorjmaldo@gmail.com">N.J.Maldonado</a></p>
+    </footer>
+
+    <script src="encriptador.js"></script>
+
+</body>
+</html>
