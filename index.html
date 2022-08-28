@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--Font Awesome styles -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!--Font Awesome styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">    
-    <!-- Google Fonts -->
+    
     
     <title>Encriptador de texto</title>
 </head>
@@ -25,8 +26,10 @@
         </div>
     </header>
     <main class="main">
-        <div class="container-principal">
-            <div class="card-1">
+        <div class="banner"> 
+            <h1>Enciptador de texto</h1>
+        </div>
+        <section class="card-1" >
                 <textarea name="txt2" 
                           class="mensaje" 
                           id="mensaje" 
@@ -48,8 +51,8 @@
                             id="desencriptar">Desencriptar
                     </button>       
                 </div>
-            
-            <div class="card-2">
+        </section>
+        <section class="card-2" id="card-2">
                     <textarea name="txt2" 
                               class="txt-resultado" 
                               id="resultado" 
@@ -59,7 +62,7 @@
                             class="copiar" 
                             id="copiar">Copiar
                     </button>
-            </div>
+            
             <img src="images/muñeco.png" 
                  class="img-resultado" 
                  id="img-resultado" 
@@ -68,7 +71,7 @@
                  class="sufijo-resultado" 
                  id="sufijo-resultado" 
                  alt="sufijo del texto encriptado">
-        </div>
+        </section>
     </main>
     <footer>
         <img src="images/Logo.png" class="logo-footer" alt="Logo de la página">

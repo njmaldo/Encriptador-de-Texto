@@ -15,27 +15,37 @@ header {
     box-sizing: border-box;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20px;
-    padding-top: 30px;
+    padding-left: 1070px;
+    padding-top: 2px;
     font-size: 12px;
-    font-weight: 300;
 }
 .logo-header {
     display: flex;
     float: left;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 60px;
+    padding-left: 40px;
     padding-top: 15px;
     width: 120px;
     height: 48px;
-    left: 40px;
-    top: 40px;
 }
 .main {
     position: relative;
     width: 1440px;
     height: 1024px;
+}
+.banner {
+    display: flex;
+    position: absolute;
+    padding-top: 35px;
+    margin-left: 135px;
+    width: 100%;
+    height: auto;
+    font-size: 45px;
+    color: #0A3871;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
 .mensaje {
     position: absolute;
@@ -59,7 +69,6 @@ header {
     text-align: center;
     padding-top: 120px;
 }
-
 .exclamacion {
     display: flex;
     flex-direction: row;
@@ -161,23 +170,23 @@ header {
     text-align: initial;
 }
 .img-resultado {
-    position: absolute;
+    position: sticky;
     width: 336px;
     height: 304px;
     left: 1032px;
-    top: 283px;
+    top: 250px;
     border-radius: 0px;
     background: #FFFFFF;
 } 
 .sufijo-resultado {
-    position: absolute;
+    position: sticky;
     flex-direction: column;
     align-items: flex-start;
     background: #FFFFFF;
     width: 336px;
     height: 122px;
     left: 1032px;
-    top: 619px;
+    top: 554px;
     gap: 16px;
 }
 .copiar {
@@ -218,12 +227,10 @@ footer {
     float: left;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-bottom: 10px;
     width: 120px;
     height: 48px;
-    left: 40px;
-    top: 40px;
 }
 .copyright {
     text-align: center;
@@ -235,7 +242,7 @@ footer {
 @media screen and (max-width:768px) {
     body {
         position:absolute;
-        display: flex;
+        display: inline-block;
         box-sizing: border-box;
         width: 768px;
         height: 1174px;
@@ -271,6 +278,18 @@ footer {
         height: 1174px; 
         background: #F3F5FC;
     }
+    .banner {
+        display: inline-flex;
+        position: absolute;
+        padding-top: 20px;
+        width: 100%;
+        height: auto;
+        font-size: 45px;
+        color: #0A3871;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
     .mensaje {
         position: absolute;
         text-align: initial;
@@ -278,6 +297,15 @@ footer {
         height: 288px;
         left: 40px;
         top: 240px;
+    }
+    #texto {
+        font-style: normal;
+        text-transform: lowercase;
+        width: 299px;
+        height: 18px;
+        font-size: 12px;
+        line-height: 150%;
+        color: #495057;
     }
     .buttons {
         position: absolute;
@@ -300,32 +328,41 @@ footer {
     }
     .card-2 {
         position: absolute;
-        border: none;
-        padding: 32px;
-        border-radius: 32px;
-        width: 655px;
+        width: 688px;
         height: 343px;
         left: 40px;
         top: 1001px;
         gap: 32px;
+        border: none;
+        border-radius: 32px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         background: #FFFFFF;
     }
-    #img-resultado,
-    #sufijo-resultado {
+
+    #img-resultado {
         display: none !important;
+    }
+    .sufijo-resultado {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        padding: 30px;
+        gap: 16px;
+        width: 624px;
+        height: 180px;
+        top: 490px;
+        left: 38px;
     }
     .txt-resultado {
         display: flex;
         position: absolute;
         flex-direction: column;
         align-items: flex-start;
-        padding: 32px;
+        width: 624px;
+        height: 180px;
+        left: 32px;
         gap: 32px;
-        width: 610px;
-        height: 130px;
-        left: 22px;
-        top: 32px;
     }
     .copiar {
         box-sizing: border-box;
@@ -356,8 +393,8 @@ footer {
     /* Telefono */
     @media screen and (max-width:480px) {
         body {
-            position: absolute;
-            display: flex;
+            margin: 0px;
+            padding: 0px;  
             box-sizing: border-box;
             width: 375px;
             height: 933px;
@@ -366,13 +403,15 @@ footer {
         }
         header {
             position: absolute;
-            padding-bottom: 39px;
+            display: block;
+            width: 375px;
+            height: 96px;
         }
         .top-contact {
             box-sizing: border-box;
             flex-direction: column;
             align-items: flex-start;
-            padding-top: 30px;
+            padding-top: 40px;
             font-size: 8px;
             font-weight: 300;
         }
@@ -392,35 +431,60 @@ footer {
             height: 933px; 
             background: #F3F5FC;
         }
+        .banner {
+            display: inline-flex;
+            position: absolute;
+            padding-top: 35px;
+            margin-left: 90px;
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            color: #0A3871;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
         .mensaje {
             position: absolute;
             width: 343px;
-            height: 624px;
+            height: 160px;
             left: 16px;
             top: 152px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #0A3871;
+        }
+        .mensaje::placeholder {
+            color: #0A3871;
+            text-align: center;
+            padding-top: 20px;
         }
         .buttons {
-            display: inline-grid;
+            display: block;
             position: absolute;
+            white-space: break-spaces;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: center;
             padding: 0px;
+            margin-top: 20px;
             width: 343px;
             height: 158px;
             left: 16px;
-            top: 874px;
-            gap: 24px;       
+            top: 420px;      
         }
         .btn-encriptar {
             flex-direction: row;
             cursor: pointer;
             align-items: flex-start;
             align-self: stretch;
-            padding: 24px;
+            padding: 12px;
             gap: 8px;
             border-radius: 24px;
             width: 343px;
-            height: 67px;
+            height: 50px;
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
@@ -434,10 +498,10 @@ footer {
             align-self: stretch;
             cursor: pointer;
             width: 343px;
-            height: 67px;
+            height: 50px;
             top: 91px;
             gap: 8px;
-            padding: 24px;
+            padding: 12px;
             border: 1px solid #0A3871;
             border-radius: 24px;
             font-weight: 400;
@@ -449,25 +513,52 @@ footer {
             position: absolute;
             width: 252px;
             height: 18px;
-            left: 45px;
-            top: 851px;
+            left: 16px;
+            top: 451px;
+        }
+        #texto {
+            font-style: normal;
+            text-transform: lowercase;
+            width: 299px;
+            height: 18px;
+            left: 16px;
+            top: 451px;
+            font-size: 10px;
+            line-height: 150%;
+            color: #495057;
         }
         .card-2 {
             position: absolute;
+            display: flex;
+            align-items: flex-start;
             border: none;
-            width: 290px;
-            height: 595px;
+            width: 280px;
+            height: 210px;
             left: 16px;
-            top: 1096px;
+            top: 650px;
             padding: 32px;
-            gap: 32px;
+            gap: 8px;
             border-radius: 32px;
-            box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
             background: #FFFFFF;
         }
-        .img-resultado,
-        .sufijo-resultado {
+        .img-resultado {
             display: none !important;
+        }
+        .sufijo-resultado {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            padding: 0px;
+            width: 287px;
+            height: 121px;
+            top: 510px;
+            left: 21px;
+            gap: 16px;
+            background: none;
+            /* box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%); */
+            border-radius: 32px;
         }
         .txt-resultado {
             display: flex;
@@ -476,8 +567,10 @@ footer {
             align-items: flex-start;
             align-self: stretch;
             line-height: 150%;
-            width: 250px;
-            height: 350px;
+            font-size: 20px;
+            width: 320px;
+            height: 140px;
+            left: 10px;
             top: 32px;
         }
         .copiar {
@@ -486,12 +579,12 @@ footer {
             align-items: flex-start;
             align-self: stretch;
             text-align: center;
-            padding: 24px;
+            padding: 12px;
             gap: 8px;
-            width: 279px;
-            height: 67px;
-            top: 496px;
-            left: 32px;
+            width: 290px;
+            height: 50px;
+            top: 200px;
+            left: 29px;
             border: 1px solid #0A3871;
             border-radius: 24px;
         }

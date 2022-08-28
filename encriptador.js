@@ -13,6 +13,7 @@
         let img1 = document.getElementById('img-resultado');
         let img2 = document.getElementById('sufijo-resultado');
         let btn  = document.getElementById('copiar');
+        let c2   = document.querySelector('#card-2');
 
         const encriptar = () => {
             if(!validarLetras()) { //Si el texto no es válido, no encripta el mensaje
@@ -58,15 +59,18 @@
             navigator.clipboard.writeText(mensajeEncriptado);
             inputMensaje.value = '';
         }
-        const btnOcultar = () => {
+        const ocultar = () => {
             btn.style.visibility  = 'hidden';
+            c2.style.visibility   = 'visible';
         }
-        btnOcultar();
+        ocultar();
+
         buttonEncriptar.addEventListener('click', () => {
             encriptar();
             img1.style.visibility = 'hidden';
             img2.style.visibility = 'hidden';
             btn.style.visibility  = 'visible';
+            c2.style.visibility   = 'visible';
         });
 
         buttonCopiar.addEventListener('click', () => {
@@ -75,11 +79,13 @@
             img2.style.visibility = 'visible';
             btn.style.visibility  = 'hidden';
             inputResultado.value = '';
+            c2.style.visibility   = 'hidden';
         });
         buttonDesencriptar.addEventListener('click', () => {
             img1.style.visibility = 'hidden';
             img2.style.visibility = 'hidden';
             btn.style.visibility  = 'visible';
+            c2.style.visibility   = 'visible';
             desEncriptar();
         });
         
