@@ -51,7 +51,7 @@ body {
     grid-gap: 30px;
     margin: 50px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 .card-1 {
     grid-column: 1/2;
