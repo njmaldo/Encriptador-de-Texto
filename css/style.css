@@ -205,13 +205,14 @@ body {
     position: absolute;
     width: 336px;
     height: 304px;
-    border-radius: 0px;
+    border-radius: 20px;
     background: #FFFFFF;
 } 
 .sufijo-resultado {
     position: sticky;
     flex-direction: column;
     align-items: flex-start;
+    border-radius: 20px;
     background: #FFFFFF;
     width: 336px;
     height: 122px;
