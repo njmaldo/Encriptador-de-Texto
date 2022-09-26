@@ -423,7 +423,7 @@ body {
             margin: 0px;
         }
         .footer .social-icons {
-            margin-right: 115px;
+            grid-column: 4/9;
         }
         .text-right {
             margin-right: 20px;
