@@ -336,7 +336,7 @@ body {
     }
     /* Fin Tablet */
     /* Telefono */
-    @media screen and (max-width:480px) {
+    @media screen and (max-width: 375px) {
         .container {
             grid-template-areas: 'header    header    header'
                                  'contenido contenido contenido'
@@ -380,6 +380,9 @@ body {
             margin-top: 30px;
             margin-left: 25px;
         }
+        #texto {
+            font-size: 10px;
+        }
         .buttons {
             flex-direction: column;  
             margin-left: 20px;   
@@ -414,8 +417,7 @@ body {
         .footer {
             padding: 0px;
             font-size: 12px;
-            max-width: 480px;
-            margin-top: 30px;
+            margin-bottom: 20px;
         }
         .footer_logo {
             margin: 0px;
